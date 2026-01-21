@@ -20,8 +20,9 @@ colcon build
 source install/setup.bash
 ```
 ## Run full program with one command
+```
 ros2 launch click_control demo_turtlesim.launch.py
-
+```
 It starts both the turtlesim and control window
 
 #Manual run
