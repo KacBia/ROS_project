@@ -8,18 +8,23 @@ Control a robot by clicking in a separate window.
 Left click on upper half of the window – move forward  
 Left click on lower half of the window – move backward  
 Right click – stop  
-
 This demo uses turtlesim.
 
 ## How to run
 
-Open a terminal in the project folder and run:
+Open a terminal in the project folder and build it:
 
 ```bash
 cd ~/ROS_project
 colcon build
 source install/setup.bash
 ```
+## Run full program with one command
+ros2 launch click_control demo_turtlesim.launch.py
+
+It starts both the turtlesim and control window
+
+#Manual run
 
 ## Start the robot in terminal 1
 ```
