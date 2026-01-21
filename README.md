@@ -25,7 +25,7 @@ ros2 launch click_control demo_turtlesim.launch.py
 ```
 It starts both the turtlesim and control window
 
-#Manual run
+##Manual run
 
 ## Start the robot in terminal 1
 ```
