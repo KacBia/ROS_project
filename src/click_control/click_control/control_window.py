@@ -4,6 +4,8 @@ from geometry_msgs.msg import Twist
 import cv2
 import numpy as np
 
+SPEED = 0.5
+
 class ControlWindow(Node):
     """
     Simple GUI control (like in the PDF screenshot):
@@ -46,11 +48,11 @@ class ControlWindow(Node):
         if event == cv2.EVENT_LBUTTONDOWN:
             if y < self.h // 2:
                 self.last_cmd = "FORWARD"
-                self.publish_twist(0.2)
+                self.publish_twist(SPEED)
                 self.get_logger().info("GUI click ABOVE center -> FORWARD")
             else:
                 self.last_cmd = "BACKWARD"
-                self.publish_twist(-0.2)
+                self.publish_twist(-SPEED)
                 self.get_logger().info("GUI click BELOW center -> BACKWARD")
 
         elif event == cv2.EVENT_RBUTTONDOWN:
