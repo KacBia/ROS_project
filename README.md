@@ -1,5 +1,3 @@
-# ROS_project
-
 
 # ROS2 Click Control (turtlesim)
 
