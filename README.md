@@ -22,11 +22,12 @@ source install/setup.bash
 ```
 
 ## Start the robot in terminal 1
-
+```
 ros2 run turtlesim turtlesim_node
-
+```
 ## Start the control program in second terminal:
+```
 cd ~/ROS_project
 source install/setup.bash
 ros2 run click_control control_window --ros-args -r /cmd_vel:=/turtle1/cmd_vel
-
+```
