@@ -1,12 +1,12 @@
 
-# ROS2 Click Control (turtlesim)
+# ROS2 Click Control (turtlebot)
 
 Control a robot by clicking in a separate window.
 
 Left click on upper half of the window – move forward  
 Left click on lower half of the window – move backward  
 Right click – stop  
-This demo uses turtlesim.
+This demo uses gazeboo turtlebot.
 
 ## How to run
 
